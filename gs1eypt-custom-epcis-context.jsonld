@@ -1,0 +1,17 @@
+{
+  "@context": [
+    "https://ref.gs1.org/standards/epcis/2.0.0/epcis-context.jsonld",
+    {
+      "gs1egypthc": "http://epcis.gs1eg.org/hc/ns/",
+      "gs1egypthc:epc": {
+        "@type": "xsd:anyURI"
+      },
+      "gs1egypthc:uom": {
+        "@type": "xsd:string"
+      },
+      "gs1egypthc:quantity": {
+        "@type": "xsd:double"
+      }
+    }
+  ]
+}
