@@ -4,7 +4,7 @@
     {
       "gs1egypthc": "http://epcis.gs1eg.org/hc/ns/",
       "gs1egypthc:epc": {
-        "@type": "xsd:anyURI"
+        "@type": "xsd:decimal"
       },
       "gs1egypthc:uom": {
         "@type": "xsd:string"
