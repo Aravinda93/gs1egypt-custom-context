@@ -107,10 +107,6 @@
       "@id": "acme:conditionOfTheProduct",
       "@type": "xsd:string"
     },
-    "bizStep": {
-      "@id": "epcis:bizStep",
-      "@type": "@id"
-    },
     "producing": {
       "@id": "acme:producing"
     },
