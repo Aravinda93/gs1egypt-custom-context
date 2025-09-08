@@ -2,7 +2,7 @@
   "@context": {
     "xsd": "http://www.w3.org/2001/XMLSchema#",
     "epcis": "https://ref.gs1.org/epcis/",
-    "gs1egypthc": "https://ref.gs1eg.org/epcis/hc/",
+    "gs1egypthc": "https://raw.githubusercontent.com/Aravinda93/gs1egypt-custom-context/refs/heads/main/custom-epcis-context.jsonld",
     "recallReason": {
       "@id": "gs1egypthc:recallReason",
       "@type": "xsd:string"
