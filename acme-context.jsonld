@@ -1,8 +1,15 @@
 {
   "@context": {
-    "xsd": "http://www.w3.org/2001/XMLSchema#",
-    "epcis": "https://ref.gs1.org/epcis/",
+    "@protected": true,
+    "@version": 1.1,
     "acme": "https://ref.acme.com/voc/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "id": "@id",
+    "type": "@type",
+    "baseURL": "@base",
     "rawMaterial": {
       "@id": "acme:rawMaterial",
       "@type": "xsd:string"
