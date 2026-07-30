@@ -25,11 +25,6 @@
       },
       "eventTimeZoneOffset": "epcis:eventTimeZoneOffset",
       "action": "epcis:action",
-      "certificationInfo": {
-        "@id": "epcis:certificationInfo",
-        "@type": "@id",
-        "@container": "@set"
-      },
       "bizStep": {
         "@context": {
           "accepting": "cbv:BizStep-accepting",
@@ -557,7 +552,12 @@
       "EPCISDocument": "epcis:EPCISDocument",
       "EPCISQueryDocument": "epcis:EPCISQueryDocument",
       "epcisHeader": "epcis:epcisHeader",
-      "masterData": "epcis:masterData",
+      "epcisHeader": {
+  "@id": "epcis:epcisHeader",
+  "@context": {
+    "masterData": "epcis:masterData"
+  }
+},
       "vocabularyList": "epcis:vocabularyList",
       "epcisBody": "epcis:epcisBody",
       "queryResults": "epcis:queryResults",
