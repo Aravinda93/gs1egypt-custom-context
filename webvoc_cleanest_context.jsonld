@@ -4,9 +4,6 @@
     {
       "@protected": true,
       "@version": 1.1,
-      "epcis": "https://ref.gs1.org/epcis/",
-      "cbv": "https://ref.gs1.org/cbv/",
-      "cbvmda": "urn:epcglobal:cbv:mda:",
       "ObjectEvent": "epcis:ObjectEvent",
       "AggregationEvent": "epcis:AggregationEvent",
       "TransformationEvent": "epcis:TransformationEvent",
@@ -28,6 +25,11 @@
       },
       "eventTimeZoneOffset": "epcis:eventTimeZoneOffset",
       "action": "epcis:action",
+      "certificationInfo": {
+        "@id": "epcis:certificationInfo",
+        "@type": "@id",
+        "@container": "@set"
+      },
       "bizStep": {
         "@context": {
           "accepting": "cbv:BizStep-accepting",
@@ -227,7 +229,7 @@
       },
       "quantity": {
         "@id": "epcis:quantity",
-        "@type": "xsd:double"
+        "@type": "xsd:decimal"
       },
       "epcClass": {
         "@id": "epcis:epcClass",
@@ -301,7 +303,6 @@
         "@container": "@set",
         "@context": {
           "@protected": true,
-          "epcis": "https://ref.gs1.org/epcis/",
           "deviceID": {
             "@id": "epcis:deviceID",
             "@type": "@id"
@@ -327,7 +328,6 @@
             "@id": "epcis:sensorMetadata",
             "@context": {
               "@protected": true,
-              "epcis": "https://ref.gs1.org/epcis/",
               "startTime": {
                 "@id": "epcis:startTime",
                 "@type": "xsd:dateTimeStamp"
@@ -346,7 +346,6 @@
             "@id": "epcis:sensorReport",
             "@context": {
               "@protected": true,
-              "epcis": "https://ref.gs1.org/epcis/",
               "type": {
                 "@context": {
                   "AbsoluteHumidity": "gs1:AbsoluteHumidity",
@@ -539,7 +538,7 @@
       },
       "eventID": "@id",
       "creationDate": {
-        "@id": "dcterms:created",
+        "@id": "dct:created",
         "@type": "xsd:dateTime"
       },
       "sender": {
@@ -558,6 +557,7 @@
       "EPCISDocument": "epcis:EPCISDocument",
       "EPCISQueryDocument": "epcis:EPCISQueryDocument",
       "epcisHeader": "epcis:epcisHeader",
+      "masterData": "epcis:masterData",
       "vocabularyList": "epcis:vocabularyList",
       "epcisBody": "epcis:epcisBody",
       "queryResults": "epcis:queryResults",
