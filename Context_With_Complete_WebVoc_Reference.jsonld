@@ -551,13 +551,12 @@
       },
       "EPCISDocument": "epcis:EPCISDocument",
       "EPCISQueryDocument": "epcis:EPCISQueryDocument",
-      "epcisHeader": "epcis:epcisHeader",
       "epcisHeader": {
-  "@id": "epcis:epcisHeader",
-  "@context": {
-    "masterData": "epcis:masterData"
-  }
-},
+        "@id": "epcis:epcisHeader",
+        "@context": {
+          "masterData": "epcis:masterData"
+        }
+      },
       "vocabularyList": "epcis:vocabularyList",
       "epcisBody": "epcis:epcisBody",
       "queryResults": "epcis:queryResults",
@@ -565,7 +564,14 @@
       "queryName": "epcis:queryName",
       "resultsBody": "epcis:resultsBody",
       "eventList": {
-        "@id": "epcis:eventList"
+        "@id": "epcis:eventList",
+        "@context": {
+          "certificationInfo": {
+            "@id": "epcis:certificationInfo",
+            "@type": "@id",
+            "@container": "@set"
+          }
+        }
       },
       "children": {
         "@id": "epcis:children",
